@@ -1,0 +1,98 @@
+body{
+    font-family: "Sofia", sans-serif;
+    font-size: 30px;
+    text-shadow: 3px 3px 3px #ababab;
+  }
+
+ 
+.mixfood {
+    background: url(fullmix.avif) no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+height: 100vh; 
+position: relative;
+}
+
+.burger {
+    color:white;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+
+    
+}
+.burger h1{
+    font-size: 2.1rem;
+    text-align: center;
+}
+
+.burger span {
+    margin-left: 5rem;
+    display: inline-block;
+    margin-bottom: 3rem;
+}
+
+
+.foam_code .postcode {
+    display: block;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 2rem;
+    padding: 6rem;
+    border: none;
+    outline: none;
+}
+.foam_code button {
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    background-color: aquamarine;
+    color: black;
+    border-radius : 1rem;
+    
+
+}
+.product {
+
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    display: flex;
+
+justify-content: space-between;
+
+}
+
+.product .product__list__item {
+    width:30%;
+    font-size: small;
+    margin-top: 3%;
+
+}
+.product__list__item .img-responsive {
+    width: 100%;
+    height: 200px;
+  }
+.product__list__item p{
+    width:100%;
+}
+@media only screen and (max-width: 700px) {
+    .product{
+        flex-direction: column;
+    }
+    .product .product__list__item {
+        width:100%;
+    }
+    .product__list__item .img-responsive {
+        height: 500px;
+    }
+    .foam_code button {
+        width:100%;
+    }
+  }
+

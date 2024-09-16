@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .hovercolor {
+            cursor: pointer;
+
+            &:hover {
+                color: green;
+                font-size: 1.5em;
+            }
+        }
+    </style>
+</head>
+<!-- href, hover,input,onclick dom property -->
+
+<body>
+    <!-- link -->
+    <a style="text-decoration-color: brown;color: brown;" href="https://www.google.com"> Go to Google</a>
+    <button style="padding: 10px 5px; ">
+        <a style="text-decoration: none;" href="https://www.google.com"> Go to Google</a>
+    </button>
+    <!-- hover -->
+    <div>
+        <a style=" text-decoration-color: brown;color: brown;">
+            <span class="hovercolor"> Hover Color
+            </span>
+        </a>
+    </div>
+    <div>
+        <input type="text" placeholder="enter a text" />
+    </div>
+    <div style="margin-top: 10px;">
+        <textarea placeholder="enter a text" rows="4"></textarea>
+    </div>
+    <!-- javascript click functions -->
+    <div onclick="onClickCall()">onClick Call</div>
+    <!--color change with id  -->
+    <div id="text" onclick="idChangeColor()">click to Change Text Color</div>
+    <!-- color change with class -->
+    <div  class="clickcolor" onclick="classChangeColor()">
+        click to Change Text Color
+    </div>
+      <!-- inner text change -->
+      <div  id="textChange" onclick="textChange()">
+        change the text
+    </div>
+</body>
+<script>
+    function onClickCall() {
+        console.log("hello!")
+    }
+
+    // Get the div element by its id
+    function idChangeColor() {
+        var element=document.getElementById("text");
+        console.log(element)
+        element.style.color = "red"
+    }
+    // Get the div element by its class
+    function classChangeColor() {
+       const elements = document.getElementsByClassName("clickcolor")
+      console.log(elements)
+       elements[0].style.color = "green"
+    }
+    // inner text change
+    function textChange(){
+        document.getElementById("textChange").innerText="my text is change"
+    }
+</script>
+
+</html>

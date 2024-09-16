@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<style>
+  .hello {
+    font-size: 36px;
+    font-weight: bold;
+    text-decoration: underline;
+    color: blue;
+  }
+
+  .btn {
+  padding: 0.5rem 1rem; /* Assuming 'p-2' is padding of 0.5rem on all sides */
+  background-color: #6d28d9; /* Tailwind's bg-purple-600 */
+  color: #ffffff; /* Text color white */
+  border-radius: 0.375rem; /* Tailwind's rounded (0.375rem) */
+  transition-duration:  0.3s; /* Tailwind's duration-300 */
+}
+
+.btn:hover {
+  background-color: #4b1d8d; /* Tailwind's hover:bg-purple-800 */
+}
+</style>
+
+<body class="max-w-6xl m-auto">
+  <h1 class="hello">Hello world! without tailwind</h1>
+  <br />
+  <h1 class="text-6xl font-bold underline text-red-200">
+
+    Hello world! with tailwind
+  </h1>
+  <div class="mt-10 flex flex-col space-y-2" style="display: flex; flex-direction: column;">
+    <div>
+      <button class="btn">Submit</button>
+    </div>
+    <div>
+      <button class="p-2 bg-purple-600 text-white rounded hover:bg-purple-800 duration-300">
+        Submit
+      </button>
+    </div>
+  </div>
+</body>
+
+</html>

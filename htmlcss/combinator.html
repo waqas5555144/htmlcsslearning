@@ -1,0 +1,36 @@
+<!-- sibling -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /* Child Selector (>) */
+.sibling > p{
+    color:aqua;
+}
+/* Adjacent Sibling Selector (+) */
+.sibling + p{
+    color:rgb(38, 255, 0)!important;
+}
+/* Adjacent General Selector (+) */
+.sibling ~ p{
+    color:rgb(30, 0, 255);
+}
+</style>
+<body>
+    <div class="sibling">
+        <p>pargraph1</p>
+        <p>pargraph2</p>
+        <p>pargraph3</p>
+        <p>pargraph4</p>
+    </div>
+    <p>Paragraph 3. After a div.</p>
+    <div>
+
+    </div>
+    <p>Paragraph 3. After a div.</p>
+</body>
+</html>
